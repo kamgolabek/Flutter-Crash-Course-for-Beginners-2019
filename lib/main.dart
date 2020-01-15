@@ -5,8 +5,11 @@ void main(List<String> args) {
 }
 
 class MyApp extends StatelessWidget {
+
+  var questionIndex = 0;
+
   void answerQuestion() {
-    print("Answer chosen!");
+    questionIndex += 1;
   }
 
   @override
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text('The question!'),
+            Text(questions[questionIndex]),
             RaisedButton(
               child: Text('Answer 1'),
               onPressed: answerQuestion,
