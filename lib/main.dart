@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My first App2'),
+          title: Text('Flutter Crash Course for Beginners 2019', style: TextStyle(fontSize: 15)),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
